@@ -1,0 +1,33 @@
+.nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+
+  @include media(large) {
+    display: none;
+  }
+
+  &__item {
+    flex-shrink: 2;
+  }
+
+  &__link {
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 1.5rem 2.5rem;
+    border: 3px solid transparent;
+    flex-shrink: 2;
+
+    &--active {
+      font-weight: 700;
+      border: 3px solid #ffffff;
+      border-radius: 50% / 80%;
+    }
+  }
+
+  &__avatar {
+    width: 4.4rem;
+  }
+}

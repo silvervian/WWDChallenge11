@@ -1,0 +1,39 @@
+.about {
+  background: url(../../img/);
+  margin: 0 auto;
+  padding: 8rem 2rem;
+  max-width: 120rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include media(medium) {
+    flex-direction: column;
+  }
+
+  &__icon {
+    margin-right: 4rem;
+    width: 600px;
+    height: 264px;
+
+    @include media(medium) {
+      max-width: 350px;
+      margin-right: 0;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__text {
+    margin-top: 5rem;
+    max-width: 562px;
+    color: #777777;
+    font-family: Lato;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3.5rem;
+  }
+}
+
+.about-wrapper {
+
+}

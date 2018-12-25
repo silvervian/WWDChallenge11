@@ -1,0 +1,25 @@
+.header {
+  position: fixed;
+  width: 100%;
+  padding: 3rem;
+  z-index: 10;
+  transition: .5s;
+
+  @include media(medium) {
+    padding: 1rem 0rem;
+  }
+
+  &-scroll {
+    background: #9bddd8;
+  }
+}
+
+.header-wrapper {
+  margin: 0 auto;
+  padding: 0 2rem 0 2rem;
+  display: flex;
+  max-width: 120rem;
+  justify-content: space-between;
+  align-items: center;
+}
+

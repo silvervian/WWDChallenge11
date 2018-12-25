@@ -1,6 +1,48 @@
+@font-face {
+  font-family: "Chunk Five";
+  src: url(../../assets/Chunkfive.otf);
+}
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Montserrat');
+
 body {
-  font-family: sans-serif;
+  font-family: Lato sans-serif;
   line-height: 1.7;
   font-weight: 400;
   color: rgb(0, 0, 0);
+}
+
+.primary {
+  font-family: "Chunk Five";
+  font-size: 8rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  @include media(small) {
+    font-size: 6rem;
+  }
+
+  &--blue {
+    color: #01a2a6;
+  }
+}
+
+.secondary {
+  font-family: "Chunk Five";
+  font-size: 6rem;
+  line-height: 6.5rem;
+  font-weight: 400;
+  color: #29d9c2;
+
+  @include media(small) {
+    text-align: center;
+  }
+
+  &--dark {
+    color: #01a2a6;
+  }
+}
+
+.tertiary {
+
 }

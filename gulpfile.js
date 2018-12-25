@@ -19,6 +19,7 @@ const config = {
       html: './src/**/*.html',
       img: './src/img/**.*',
       sass: ['./src/sass/main.scss'],
+      assets: './src/assets/*.*',
       js: [
         './src/js/lol.js',
         './src/js/app.js'
@@ -28,7 +29,8 @@ const config = {
       main: './dist',
       css: './dist/css',
       js: './dist/js',
-      img: './dist/img'
+      img: './dist/img',
+      assets: './dist/assets'
     }
   }
 };
@@ -63,6 +65,9 @@ gulp.task('static', () => {
   gulp.src(config.paths.src.html)
     .pipe(gulp.dest(config.paths.dist.main));
 
+  gulp.src(config.paths.src.assets)
+    .pipe(gulp.dest(config.paths.dist.assets));
+
   reload();
 });
 
@@ -72,7 +77,7 @@ gulp.task('image', () => {
     .pipe(imagemin([
       imagemin.gifsicle({ interlaced: true }),
       imagemin.jpegtran({ progressive: true }),
-      imagemin.optipng({ optimizationLevel: 7 }),
+      imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.svgo({
         plugins: [{ removeViewBox: false },
           { cleanupIDs: false },
@@ -101,7 +106,7 @@ gulp.task('server', () => {
 });
 
 gulp.task('watch', ['default'], () => {
-  gulp.watch('src/sass/**/*.scss', ['sass']);
+  gulp.watch('src/sass/**/**/*.scss', ['sass']);
   gulp.watch('src/img/**/*.*', ['image']);
   gulp.watch('src/js/**/*.js', ['js']);
   gulp.watch('src/*.html', ['static']);
