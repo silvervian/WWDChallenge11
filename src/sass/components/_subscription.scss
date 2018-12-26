@@ -1,0 +1,73 @@
+.subscription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 12rem;
+  background: linear-gradient(45deg, #bdf271 0%, #bdf271 50%, #b0e467 50%, #b0e467 100%);
+
+  @include media(large) {
+    flex-direction: column;
+    padding: 4rem 4rem;
+    text-align: center;
+  }
+
+  &__text {
+    font-family: Lato;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3.5rem;
+    color: #ffffff;
+  }
+
+  &__group {
+
+  }
+
+  &__input {
+    min-width: 35rem;
+    outline: none;
+    padding: 3rem;
+    font-family: "Lato";
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3.5rem;
+
+    @include media(small) {
+      min-width: 25rem;
+    }
+
+    &::placeholder {
+      color: #c7c7c7;
+      font-family: "Lato";
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 3.5rem;
+    }
+  }
+
+  &__form {
+    flex-shrink: 0;
+    display: flex;
+    border-radius: 7px;
+    border: 1px solid #7ca83f;
+    height: 72px;
+    display: flex;
+    overflow: hidden;
+
+    @include media(large) {
+      margin-top: 3rem;
+    }
+  }
+
+  &__btn {
+    min-width: 2rem;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #fff;
+    background: #01a2a6;
+    width: 100%;
+  }
+}

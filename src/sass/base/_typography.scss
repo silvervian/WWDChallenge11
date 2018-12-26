@@ -23,6 +23,8 @@ body {
     font-size: 6rem;
   }
 
+  
+  
   &--blue {
     color: #01a2a6;
   }
@@ -34,10 +36,18 @@ body {
   line-height: 6.5rem;
   font-weight: 400;
   color: #29d9c2;
-
+  
   @include media(medium) {
     text-align: center;
     font-size: 4.5rem;
+  }
+  
+  &--white {
+    color: #fff;
+  }
+
+  &--center {
+    text-align: center;
   }
 
   &--dark {

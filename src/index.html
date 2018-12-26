@@ -12,11 +12,11 @@
 <body>
 
     <ul class="menu-mobile">
-        <li class="menu-mobile__item"><a class="nav__link nav__link--active" href="#header">HOME</a></li>
-        <li class="menu-mobile__item"><a class="nav__link" href="#services">ABOUT</a></li>
-        <li class="menu-mobile__item"><a class="nav__link" href="#relax">BLOG</a></li>
-        <li class="menu-mobile__item"><a class="nav__link" href="#latest">PORTFOLIO</a></li>
-        <li class="menu-mobile__item"><a class="nav__link" href="#contact">CONTACT</a></li>
+        <li class="menu-mobile__item"><a class="nav__link nav__link--active" href="#header">Home</a></li>
+        <li class="menu-mobile__item"><a class="nav__link" href="#about">About</a></li>
+        <li class="menu-mobile__item"><a class="nav__link" href="#services">Destination</a></li>
+        <li class="menu-mobile__item"><a class="nav__link" href="#ittinery">Ittinary</a></li>
+        <li class="menu-mobile__item"><a class="nav__link" href="#contact">Contact</a></li>
     </ul>
 
     <header class="header">
@@ -31,11 +31,11 @@
             </div>
 
             <nav class="nav">
-                <li class="nav__item"><a href="#" class="nav__link nav__link--active">Home</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Destination</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Ittinary</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Review</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                <li class="nav__item"><a href="#header" class="nav__link nav__link--active">Home</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#destination" class="nav__link">Destination</a></li>
+                <li class="nav__item"><a href="#ittinery" class="nav__link">Ittinary</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 <li class="nav__item"><a href="#" class="nav__link"><img class="nav__avatar" src="img/avatar.png" alt="avatar"></a></li>
             </nav>
         </div>
@@ -45,13 +45,13 @@
         <h1 class="primary">LETS GET <span class="primary--blue">LOST</span></h1>
         <div class="hero__text">Malang will never dissapointed you. <br>
             From every step you took you will be amazed and suddenly fallin love with Malang</div>
-        <div class="btn">SET ITTINERY NOW</div>
+        <a href="#ittinery" class="btn">SET ITTINERY NOW</a>
         <div class="hero__bottom"></div>
     </section>
 
     <main class="main">
 
-        <section class="about">
+        <section id="about" class="about">
             <svg class="about__icon">
                 <use xlink:href="./img/sprite.svg#about-icon"></use>
             </svg>
@@ -67,7 +67,7 @@
 
         </section> <!-- /.about -->
 
-        <section class="destination-wrapper">
+        <section id="destination" class="destination-wrapper">
             <div class="destination">
                 <h2 class="secondary">Des<span class="secondary--dark">tination</span></h2>
                 <div class="destination__info">
@@ -138,11 +138,190 @@
 
             </div>
 
-
-
+            <div class="destination-pagination">
+                <span class="active">1</span> 2 3 4 5 <i class="fas fa-angle-right"></i> <i class="fas fa-angle-double-right"></i>
+            </div>
         </section> <!-- /.destination -->
 
+        <section id="ittinery" class="ittinery">
+            <h2 class="secondary">Set <span class="secondary--dark">Ittinery</span></h2>
+
+            <span class="ittinery__text">Simply drag and drop what you want to visit, and voila we make a ittinery and
+                schedule for your vacation.
+                have a great trip !</span>
+
+            <div class="ittinery-inner">
+
+                <div class="ittinery-wrapper">
+                    <div class="ittinery-option">
+                        <div class="ittinery-option__title">Your Ittinery Title Here</div>
+                        <div class="ittinery-option__body">
+                            <div class="ittinery-option__label">
+                                <span class="ittinery-option__day">Day 1</span>
+                                <span class="ittinery-option__date">05/29/2015 <i class="fas fa-caret-down"></i></span>
+                            </div>
+                            <div class="ittinery-option__info">
+                                <div class="ittinery-option__wrapper"><svg class="ittinery-option__icon">
+                                        <use xlink:href="./img/sprite.svg#mountain-icon"></use>
+                                    </svg>
+                                    <span class="ittinery-option__name">Mt. Bromo</span>
+                                </div>
+                                <div class="ittinery-option__time">03.30 - 09.00</div>
+                            </div>
+                            <a href="#" class="ittinery-option__add-new">add sub destination <i class="fas fa-plus-circle"></i></a>
+
+                            <div class="ittinery-option__info">
+                                <div class="ittinery-option__wrapper"><svg class="ittinery-option__icon">
+                                        <use xlink:href="./img/sprite.svg#wheel-icon"></use>
+                                    </svg>
+                                    <span class="ittinery-option__name">Batu City</span>
+                                </div>
+                                <div class="ittinery-option__time">10.00 - 15.00</div>
+                            </div>
+                            <div class="ittinery-option__list">
+                                <span class="ittinery-option__item">Enjoy while Listening Music</span><br>
+                                <span class="ittinery-option__item">Gonna Eat BAKSO</span>
+                            </div>
+
+                            <div class="ittinery-option__label">
+                                <span class="ittinery-option__day">Day 2</span>
+                                <span class="ittinery-option__date">05/29/2015 <i class="fas fa-caret-down"></i></span>
+                            </div>
+                            <div class="ittinery-option__drag">
+                                Drag Destination Here
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="btn-wrapper">
+                        <div class="btn btn--green btn--c-white"><i class="far fa-save"></i> SAVE AS PDF</div>
+                        <div class="btn btn--blue btn--c-white"><i class="fas fa-print"></i> PRINT</div>
+                    </div>
+                </div>
+
+                <div class="ittinery-list">
+                    <span class="ittinery-list__title">List of Destination</span>
+                    <span class="ittinery-list__line"></span>
+                    <span class="ittinery-list__sort"><span class="ittinery-list__sort--colored">sort by</span> :
+                        Mountain <i class="fas fa-caret-down"></i></span>
+
+                    <div class="ittinery-list__desc">
+                        <div class="ittinery-list__general">
+                            <span class="ittinery-list__name">Mt. Bromo</span>
+                            <span class="ittinery-list__time">
+                                estimated time: <span class="ittinery-list__time--colored">5 Hours</span>
+                            </span>
+                        </div>
+                        <a href="#" class="ittinery-list__detail">
+                            <svg class="ittinery-list__icon">
+                                <use xlink:href="./img/sprite.svg#mountain-icon"></use>
+                            </svg>
+                            view details
+                        </a>
+                    </div>
+                    <div class="ittinery-list__desc">
+                        <div class="ittinery-list__general">
+                            <span class="ittinery-list__name">Mt. Panderman</span>
+                            <span class="ittinery-list__time">
+                                estimated time: <span class="ittinery-list__time--colored">5 Hours</span>
+                            </span>
+                        </div>
+                        <a href="#" class="ittinery-list__detail">
+                            <svg class="ittinery-list__icon">
+                                <use xlink:href="./img/sprite.svg#mountain-icon"></use>
+                            </svg>
+                            view details
+                        </a>
+                    </div>
+                    <div class="ittinery-list__desc">
+                        <div class="ittinery-list__general">
+                            <span class="ittinery-list__name">Mt. Semeru</span>
+                            <span class="ittinery-list__time">
+                                estimated time: <span class="ittinery-list__time--colored">5 Hours</span>
+                            </span>
+                        </div>
+                        <a href="#" class="ittinery-list__detail">
+                            <svg class="ittinery-list__icon">
+                                <use xlink:href="./img/sprite.svg#mountain-icon"></use>
+                            </svg>
+                            view details
+                        </a>
+                    </div>
+                    <div class="ittinery-list__desc">
+                        <div class="ittinery-list__general">
+                            <span class="ittinery-list__name">Mt. Bromo</span>
+                            <span class="ittinery-list__time">
+                                estimated time: <span class="ittinery-list__time--colored">5 Hours</span>
+                            </span>
+                        </div>
+                        <a href="#" class="ittinery-list__detail">
+                            <svg class="ittinery-list__icon">
+                                <use xlink:href="./img/sprite.svg#mountain-icon"></use>
+                            </svg>
+                            view details
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </section> <!-- /.ittinery -->
+
+        <section id="contact" class="contact">
+
+            <h1 class="secondary secondary--center secondary--white">
+                Contact
+            </h1>
+
+            <div class="contact-inner">
+                <div class="contact-form">
+                    <div class="form">
+                        <input type="text" class="form__input" placeholder="Your Email">
+                        <input type="email" class="form__input half" placeholder="Company">
+                        <input type="text" class="form__input half" placeholder="Subject">
+                        <input type="textarea" class="form__input form__input--textarea" placeholder="Your Messages">
+                    </div>
+                    <div class="btn btn--c-white btn--green btn--right">SEND MESSAGE</div>
+                </div>
+
+                <div class="contact__desc">
+                    <div class="contact__title">You Can Find Us Here</div>
+                    <ul class="contact__list">
+                        <li class="contact__item">Jl.Danau Bratan sekian nomer sekian, Sawojajar Malang<br>
+                            <a href="" class="contact__link">FIND ON MAPS</a></li>
+                        <li class="contact__item">(+62) 8816723812</li>
+                        <li class="contact__item">(+62) 8512371632</li>
+                    </ul>
+                </div>
+            </div>
+        </section> <!-- /.contact -->
+
+        <section class="subscription">
+            <div class="subscription__group">
+                <h2 class="secondary secondary--white">Keep in Touch</h2>
+                <span class="subscription__text">We Will Give you latest
+                    information about Malang</span>
+            </div>
+            <div class="subscription__form">
+                <input type="text" class="subscription__input" placeholder="Type Email Here for Subscribe">
+                <a class="subscription__btn"><i class="fas fa-angle-right"></i></a>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <ul class="footer__rules">
+            <li class="rules__item"><a href="#" class="rules__link">Term & Condition</a></li>
+            <li class="rules__item"><a href="#" class="rules__link">Policy</a></li>
+            <li class="rules__item"><a href="#" class="rules__link">Privacy</a></li>
+        </ul>
+        <ul class="footer__icon">
+            <li class="icon__item"><a href="" class="icon__link"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="icon__item"><a href="" class="icon__link"><i class="fab fa-twitter"></i></a></li>
+            <li class="icon__item"><a href="" class="icon__link"><i class="fab fa-instagram"></a></i></li>
+        </ul>
+        <span class="footer__text">Copyright @ Adrian Jedrczak. All rights eserved. 2018</span>
+    </footer>
 
 
     <script src="./js/app.js"></script>

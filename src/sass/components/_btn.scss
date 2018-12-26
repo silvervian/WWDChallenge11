@@ -1,5 +1,6 @@
 .btn {
   font-family: "Lato";
+  display: inline-block;
   font-size: 1.6rem;
   font-weight: 700;
   color: #10273d;
@@ -10,4 +11,57 @@
   cursor: pointer;
   -webkit-user-select: none;
   user-select: none;
+  width: fit-content;
+  transition: .3s;
+
+  &:hover {
+    box-shadow: 0 2px 9px rgba(0,0,0,.5);
+  }
+
+  &:active {
+    transform: translateY(2px);
+    box-shadow: 0 0px 3px rgba(0,0,0,.5);
+  }
+
+  @include media(small) {
+
+  }
+
+  &--right {
+    align-self: flex-end;
+  }
+
+  &--c-white {
+    color: #fff;
+  }
+
+  &--green {
+    background: #bdf271;
+    order: 1;
+    margin: 1rem 2rem;
+
+    @include media(small) {
+      margin: .5rem .5rem;
+      padding: 1.5rem 3rem;
+    }
+  }
+
+  &--blue {
+    background: #28d7c1;
+    margin: 1rem 2rem;
+
+    @include media(small) {
+      margin: .5rem .5rem;
+      padding: 1.5rem 3rem;
+    }
+  }
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+
+  @include media(small) {
+    justify-content: space-around;
+  }
 }
