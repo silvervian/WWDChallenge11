@@ -3,6 +3,7 @@
   src: url(../../assets/Chunkfive.otf);
 }
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Montserrat');
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
 
 body {
   font-family: Lato sans-serif;
@@ -34,8 +35,9 @@ body {
   font-weight: 400;
   color: #29d9c2;
 
-  @include media(small) {
+  @include media(medium) {
     text-align: center;
+    font-size: 4.5rem;
   }
 
   &--dark {

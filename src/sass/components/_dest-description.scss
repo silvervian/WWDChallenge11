@@ -1,0 +1,150 @@
+.dest-description {
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 120rem;
+  background: url(../../img/desc1.jpg) no-repeat center center / cover;
+  height: 50.17rem;
+
+  @include media(medium) {
+    flex-direction: column-reverse;
+    background: url(../../img/desc-1-small.jpg) no-repeat center / cover;
+    height: 70rem;
+  }
+
+  &--small {
+    background: url(../../img/desc-2.jpg) no-repeat center / cover;
+    flex-basis: 60%;
+    flex-direction: row;
+    height: 361px;
+
+    @include media(medium) {
+      flex-direction: column-reverse;
+      width: 100%;
+      height: 70rem;
+    }
+  }
+
+  &__info {
+    padding: 5rem;
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    max-width: 482px;
+    background-color: #ffffff;
+    opacity: 0.93;
+    clip-path: polygon(3% 0px, 100% 0%, 100% 100%, 3% 100%, 3% 53%, 0% 50%, 3% 47%);
+
+    @include media(medium) {
+      max-width: 100%;
+      align-self: stretch;
+      clip-path: none;
+      padding: 2rem;
+    }
+
+    &--small {
+      // flex-basis: 60%;
+      padding: 2rem;
+      width: 60%;
+      clip-path: polygon(100% 50%, 97% 53%, 97% 100%, 0% 100%, 0% 0%, 97% 0%, 97% 47%);
+
+      @include media(medium) {
+        width: 100%;
+        clip-path: none;
+      }
+    }
+  }
+
+  &__icon {
+    width: 86px;
+    height: 89px;
+  }
+
+  &__link {
+    width: 12rem;
+    align-self: flex-end;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 1.5rem;
+    font-family: Lato;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    color: #f6f6f6;
+
+    &--xsmall {
+      align-self: flex-end;
+    }
+  }
+
+  &__title {
+    margin: 2rem 0;
+    font-family: Lato;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 3.5rem;
+    color: #01a2a6;
+  }
+
+  &__text {
+    max-width: 374px;
+    color: #777777;
+    font-family: Lato;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+
+    @include media(medium) {
+      max-width: 100%;
+    }
+
+    &--light {
+      font-weight: 400;
+    }
+  }
+}
+
+.dest-inner-wrapper {
+  display: flex;
+  margin: 2rem auto;
+  max-width: 120rem;
+
+  @include media(medium) {
+    flex-direction: column;
+  }
+}
+
+.destination-img {
+  margin: 2rem 0 2rem 2rem;
+  flex-basis: 40%;
+  position: relative;
+  height: 361px;
+  background: url(../../img/desc-3.jpg) no-repeat center / cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+
+  @include media(medium) {
+    flex-basis: 100%;
+    margin: 2rem;
+  }
+}
+
+.destination-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 154px;
+  height: 154px;
+  background-color: #ffffff;
+  opacity: 0.95;
+  border-radius: 50%;
+}
+
+.description-link {
+  position: absolute;
+  bottom: 0;
+}

@@ -1,7 +1,7 @@
 .header {
   position: fixed;
   width: 100%;
-  padding: 3rem;
+  padding: 2rem;
   z-index: 10;
   transition: .5s;
 
@@ -21,5 +21,9 @@
   max-width: 120rem;
   justify-content: space-between;
   align-items: center;
+}
+
+.destination-wrapper {
+  background: #f2fefe;
 }
 
